@@ -1,0 +1,22 @@
+.thank-you span i{
+    font-size: 4rem;
+    color: green;
+}
+
+.thank-you h1{
+    font-size: 3.6rem;
+    font-family: 'Monte Carlo', sans-serif;
+}
+.thank-you h3{
+    font-size: 2rem;
+    font-family: 'Poppins';
+}
+
+.thank-you Button{
+    background-color: rgb(47, 141, 109);
+}
+
+.primary_btn a {
+    color: white;
+  }
+  

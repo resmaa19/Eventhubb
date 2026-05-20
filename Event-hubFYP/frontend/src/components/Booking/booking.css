@@ -1,0 +1,45 @@
+.booking {
+    margin-top: 10%;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(229, 231, 235);
+    position: sticky;
+    top: 80px;
+    
+  }
+  
+  .booking_top {
+    margin-bottom: 1rem;
+  }
+  
+  .booking_top h3 {
+    margin: 0;
+  }
+  
+  .booking_top span {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .booking_info-form input[type="text"],
+  .booking_info-form input[type="number"],
+  .booking_info-form input[type="date"],
+  .booking_info-form select {
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .booking_info-form .d-flex {
+    display: flex;
+  }
+  
+  .booking_info-form .gap-3 {
+    gap: 1rem;
+  }
+  
+  .booking_info-form .btn-primary {
+    width: 100%;
+  }
+  

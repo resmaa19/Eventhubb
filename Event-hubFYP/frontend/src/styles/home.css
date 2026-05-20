@@ -1,0 +1,100 @@
+/* home.css */
+
+.banner-container {
+    height: 80vh; /* Set the height of the container to 50% of the viewport height */
+    background-image: url('../assets/images/Banner.png');
+    background-size: cover; 
+    background-position: center;
+  }
+
+  .event-hub-logo{
+    position: absolute;
+  top: 100px; /* Adjust the top position as needed */
+  left: 20px; /* Adjust the left position as needed */
+  width: 200px;
+  height: auto; 
+
+  }
+
+
+  .services_subtitle{
+    font-size:4.4rem;
+    font-weight: 400;
+    color:black;
+    font-family:'Monte Carlo', sans-serif;
+    position:absolute;
+    top: 93%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    margin-bottom:20px;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 150px; 
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left:1px solid black;
+  border-top: 1px solid black;
+  font-weight: bold;
+  margin-left:40%;
+  margin-top: 30%;
+
+}
+
+
+.separator {
+  margin: 0 10px;
+  height: 70px; 
+  background-color: #000; 
+}
+.image-container {
+  border: 10px solid white; /* White border */
+  border-radius: 10px; /* Rounded corners */
+  max-width: 60%;
+  margin-top: 10%;
+
+}
+
+.event-image {
+  width: 100%;
+}
+
+.home-container {
+  background: linear-gradient(to bottom, #ffffff 2%, #819D6B 200%, #ffffff);
+  
+}
+
+.gallery_title{
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+  margin-top:1rem;
+
+}
+.masonry_img{
+  transition: .3s; 
+}
+
+.masonry_img:hover{
+  transform: scale(1.1);
+
+}
+
+.testimonial_title{
+  font-size: 2.3rem;
+  margin-top: 1rem;
+  
+}
+
+.testimonial-img {
+  width: 100px; 
+  height: 150px; 
+}
+
+  
+
+  

@@ -1,0 +1,61 @@
+.event_content {
+    margin-top: 20px;
+
+    
+  }
+  
+  .event_content img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+ 
+  
+  .event_info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .event_info p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+ 
+  
+  .text-success {
+    color: #28a745;
+    font-size: 25px; 
+
+  }
+
+  .event_info p.appointment-charge {
+    font-weight: bold;
+    color: #578e62; /* Change the color to blue */
+    font-size: 22px; /* Adjust the font size */
+  }
+  
+  .review-form {
+    margin-top: 20px;
+    
+  }
+  
+  .review-textarea{
+    height: 150px;
+    width : 75% !important;
+  }
+
+  .user-reviews {
+    margin-top: 20px;
+  }
+  
+  .user-review {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .user-review p {
+    margin: 5px 0;
+  }
+  

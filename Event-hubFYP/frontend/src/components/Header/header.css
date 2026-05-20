@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    height: auto; 
+  }
+  
+  @font-face {
+    font-family: 'Monte Carlo';
+    src: url('./fonts/MonteCarlo-Regular.ttf') format('truetype');
+  }
+  .navbar {
+    background-color: #819D6B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 200px;
+    font-family: sans-serif;
+    margin-left: 4%;
+  }
+
+  .eventhub-link{
+    font-family: 'Monte Carlo', sans-serif;
+    
+  }
+
+  
+  .nav-links a {
+    text-decoration: none; /* Remove underline from navigation links */
+    color: white; /* Set text color for navigation links */
+    font-weight: bold;
+    font-size: 25px; /* Adjust font size as needed */
+  }
+
+  .main-links{
+    display:flex;
+    gap: 200px;
+  }
+  
+  .auth-buttons button {
+    background-color: #9CCF5C;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Add margin between buttons */
+  }
+  
+  .auth-buttons button:hover {
+    background-color: #8AB34A;
+  }
+  
+  .user-info {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically */
+    margin-right: 30%; /* Add margin between username and logout button */
+  }
+
+  .user-info h5{
+    margin-right : 30px;     
+  }
+  
+  .auth-buttons {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically */
+  }
