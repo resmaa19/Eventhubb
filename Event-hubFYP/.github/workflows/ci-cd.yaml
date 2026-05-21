@@ -1,0 +1,51 @@
+name: EventHub CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Docker Buildx
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 3. Login to DockerHub
+      - name: Login to DockerHub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      # 4. Build Backend Image
+      - name: Build Backend Image
+        run: |
+          docker build -t dockerresma/eventhub-backend:latest ./backend
+
+      # 5. Build Frontend Image
+      - name: Build Frontend Image
+        run: |
+          docker build -t dockerresma/eventhub-frontend:latest ./frontend
+
+      # 6. Push Backend Image
+      - name: Push Backend Image
+        run: |
+          docker push dockerresma/eventhub-backend:latest
+
+      # 7. Push Frontend Image
+      - name: Push Frontend Image
+        run: |
+          docker push dockerresma/eventhub-frontend:latest
+
+      # 8. Deploy to Kubernetes (only works if runner has kubectl access)
+      - name: Deploy to Kubernetes
+        run: |
+          kubectl apply -f k8s/
